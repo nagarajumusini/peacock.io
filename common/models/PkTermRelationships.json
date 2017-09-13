@@ -1,0 +1,33 @@
+{
+  "name": "PkTermRelationships",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "term_order": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkTermTaxonomy": {
+      "type": "belongsTo",
+      "model": "PkTermTaxonomy",
+      "foreignKey": ""
+    },
+    "pkPosts": {
+      "type": "belongsTo",
+      "model": "PkPosts",
+      "foreignKey": ""
+    },
+    "pkLinks": {
+      "type": "belongsTo",
+      "model": "PkLinks",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

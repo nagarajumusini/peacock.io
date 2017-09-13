@@ -1,0 +1,26 @@
+{
+  "name": "PkPostmeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkPosts": {
+      "type": "belongsTo",
+      "model": "PkPosts",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

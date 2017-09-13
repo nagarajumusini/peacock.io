@@ -1,0 +1,29 @@
+{
+  "name": "PkTerms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "term_group": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkTermTaxonomy": {
+      "type": "belongsTo",
+      "model": "PkTermTaxonomy",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

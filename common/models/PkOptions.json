@@ -1,0 +1,23 @@
+{
+  "name": "PkOptions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "option_name": {
+      "type": "string"
+    },
+    "option_value": {
+      "type": "string"
+    },
+    "autoload": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

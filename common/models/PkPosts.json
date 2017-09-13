@@ -1,0 +1,103 @@
+{
+  "name": "PkPosts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "post_author": {
+      "type": "string"
+    },
+    "post_date": {
+      "type": "date",
+      "required": true
+    },
+    "post_date_gmt": {
+      "type": "date"
+    },
+    "post_content": {
+      "type": "string"
+    },
+    "post_title": {
+      "type": "string",
+      "required": true
+    },
+    "post_excerpt": {
+      "type": "string"
+    },
+    "post_status": {
+      "type": "boolean"
+    },
+    "comment_status": {
+      "type": "boolean"
+    },
+    "ping_status": {
+      "type": "boolean"
+    },
+    "post_password": {
+      "type": "string"
+    },
+    "post_name": {
+      "type": "string"
+    },
+    "to_ping": {
+      "type": "string"
+    },
+    "pinged": {
+      "type": "string"
+    },
+    "post_modified": {
+      "type": "date"
+    },
+    "post_modified_gmt": {
+      "type": "date"
+    },
+    "post_content_filtered": {
+      "type": "string"
+    },
+    "post_parent": {
+      "type": "string"
+    },
+    "guid": {
+      "type": "string"
+    },
+    "menu_order": {
+      "type": "number"
+    },
+    "post_type": {
+      "type": "string"
+    },
+    "post_mime_type": {
+      "type": "string"
+    },
+    "comment_count": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkPostmeta": {
+      "type": "hasMany",
+      "model": "PkPostmeta",
+      "foreignKey": ""
+    },
+    "pkTermRelationships": {
+      "type": "hasMany",
+      "model": "PkTermRelationships",
+      "foreignKey": ""
+    },
+    "pkComments": {
+      "type": "hasMany",
+      "model": "PkComments",
+      "foreignKey": ""
+    },
+    "pkUser": {
+      "type": "belongsTo",
+      "model": "PkUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

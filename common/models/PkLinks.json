@@ -1,0 +1,56 @@
+{
+  "name": "PkLinks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link_url": {
+      "type": "string"
+    },
+    "link_name": {
+      "type": "string"
+    },
+    "link_image": {
+      "type": "string"
+    },
+    "link_target": {
+      "type": "string"
+    },
+    "link_description": {
+      "type": "string"
+    },
+    "link_visible": {
+      "type": "string"
+    },
+    "link_owner": {
+      "type": "string"
+    },
+    "link_rating": {
+      "type": "number"
+    },
+    "link_updated": {
+      "type": "date"
+    },
+    "link_rel": {
+      "type": "string"
+    },
+    "link_notes": {
+      "type": "string"
+    },
+    "link_rss": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkTermRelationships": {
+      "type": "hasMany",
+      "model": "PkTermRelationships",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

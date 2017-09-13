@@ -1,0 +1,26 @@
+{
+  "name": "PkCommentmeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkComments": {
+      "type": "belongsTo",
+      "model": "PkComments",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

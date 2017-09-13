@@ -1,0 +1,66 @@
+{
+  "name": "PkComments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "comment_author": {
+      "type": "string"
+    },
+    "comment_author_email": {
+      "type": "string"
+    },
+    "comment_author_url": {
+      "type": "string"
+    },
+    "comment_author_IP": {
+      "type": "string"
+    },
+    "comment_date": {
+      "type": "date"
+    },
+    "comment_date_gmt": {
+      "type": "string"
+    },
+    "comment_content": {
+      "type": "string"
+    },
+    "comment_karma": {
+      "type": "number"
+    },
+    "comment_approved": {
+      "type": "boolean"
+    },
+    "comment_agent": {
+      "type": "string"
+    },
+    "comment_type": {
+      "type": "string"
+    },
+    "comment_parent": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkCommentmeta": {
+      "type": "hasMany",
+      "model": "PkCommentmeta",
+      "foreignKey": ""
+    },
+    "pkPosts": {
+      "type": "belongsTo",
+      "model": "PkPosts",
+      "foreignKey": ""
+    },
+    "pkUser": {
+      "type": "belongsTo",
+      "model": "PkUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

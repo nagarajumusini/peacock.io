@@ -1,0 +1,26 @@
+{
+  "name": "PkUsermeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkUser": {
+      "type": "belongsTo",
+      "model": "PkUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "PkUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "pkPosts": {
+      "type": "hasMany",
+      "model": "PkPosts",
+      "foreignKey": ""
+    },
+    "pkUsermeta": {
+      "type": "hasMany",
+      "model": "PkUsermeta",
+      "foreignKey": ""
+    },
+    "pkComments": {
+      "type": "hasMany",
+      "model": "PkComments",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

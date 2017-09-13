@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "MongoDBs": {
+    "host": "ds133044",
+    "port": 33044,
+    "url": "mongodb://nagaraju:nagaraju@ds133044.mlab.com:33044/peacock-io",
+    "database": "peacock-io",
+    "password": "nagaraju",
+    "name": "MongoDBs",
+    "user": "nagaraju",
+    "connector": "mongodb"
+  }
+}

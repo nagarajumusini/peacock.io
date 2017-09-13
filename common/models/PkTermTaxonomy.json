@@ -1,0 +1,37 @@
+{
+  "name": "PkTermTaxonomy",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "taxonomy": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "count": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pkTerms": {
+      "type": "hasMany",
+      "model": "PkTerms",
+      "foreignKey": ""
+    },
+    "pkTermRelationships": {
+      "type": "hasMany",
+      "model": "PkTermRelationships",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
