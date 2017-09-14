@@ -1,0 +1,41 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "test",
+    "password": "",
+    "name": "mysql",
+    "connector": "mysql",
+    "user": "root"
+  },
+  "MongoDBs": {
+    "host": "ds133044",
+    "port": 33044,
+    "url": "mongodb://nagaraju:nagaraju@ds133044.mlab.com:33044/peacock-io",
+    "database": "peacock-io",
+    "password": "nagaraju",
+    "name": "MongoDBs",
+    "user": "nagaraju",
+    "connector": "mongodb"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "test@gmail.com",
+          "pass": "test"
+        }
+      }
+    ]
+  }
+}
